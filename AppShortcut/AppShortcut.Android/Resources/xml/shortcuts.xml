@@ -1,0 +1,35 @@
+﻿<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+  <!-- Define static shortut here -->
+  <shortcut
+    android:shortcutId="bookings"
+    android:enabled="true"
+    android:icon="@drawable/bookings"
+    android:shortcutShortLabel="@string/shortcut_bookings"
+    android:shortcutLongLabel="@string/shortcut_bookings"
+    android:shortcutDisabledMessage="@string/shortcut_bookings">
+    <!--
+    If there are more than one intent defined,
+    the last intent in the list determines
+    what the user sees when they launch this shortcut
+    -->
+    <intent
+      android:action="android.intent.action.VIEW"
+      android:targetPackage="com.example.appshortcut"
+      android:targetClass="com.example.appshortcut.MainActivity"
+      android:data="content://actions/bookings"/>
+  </shortcut>
+  <shortcut
+    android:shortcutId="customerservice"
+    android:enabled="true"
+    android:icon="@drawable/customerservice"
+    android:shortcutShortLabel="@string/shortcut_customerservice"
+    android:shortcutLongLabel="@string/shortcut_customerservice"
+    android:shortcutDisabledMessage="@string/shortcut_customerservice">
+    <intent
+      android:action="android.intent.action.VIEW"
+      android:targetPackage="com.example.appshortcut"
+      android:targetClass="com.example.appshortcut.MainActivity"
+      android:data="content://actions/customerservice"/>
+  </shortcut>
+  <!-- Specify more shortcuts here. -->
+</shortcuts>

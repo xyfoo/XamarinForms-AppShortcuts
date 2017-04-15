@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:AppShortcut"
+            x:Class="AppShortcut.MainPage"
+            Title="Sample Airlines">
+    <TabbedPage.Children>
+        <ContentPage Title="Home" BackgroundColor="LightBlue">
+            <Label Text="This is the home page" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        </ContentPage>
+        <ContentPage Title="Bookings" BackgroundColor="LightYellow">
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                <Label Text="This is the booking page" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                <Button Text="Add a random flight (dynamic) shortcut" Clicked="AddRandomFlightShortcut_Clicked"/>
+                <Button Text="Clear created dynamic shortcut" Clicked="ClearCreatedDynamicShortcut_Clicked"/>
+            </StackLayout>
+        </ContentPage>
+        <ContentPage Title="Customer Service" BackgroundColor="LightGreen">
+            <Label Text="This is the Customer Service page" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        </ContentPage>
+    </TabbedPage.Children>
+
+</TabbedPage>
